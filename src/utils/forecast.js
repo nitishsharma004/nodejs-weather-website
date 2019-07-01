@@ -10,7 +10,7 @@ const forecast = (lat,long,callback) =>{
             callback('No result found! Try differnt Coordinates',undefined)
             //console.log(chalk.yellow('No result found! Try differnt keyword'))
         }else{
-            console.log(body.daily.data[0])
+           // console.log(body.daily.data[0])
             callback(undefined, body.daily.data[0].summary +' It is currently ' + body.currently.temperature + ' degree out. There is a ' + body.currently.precipProbability + '% chance of rain. The minimum tempraure for today is ' + body.daily.data[0].temperatureLow + 'degree & The maximum temperature for the day is '+ body.daily.data[0].temperatureHigh + 'degrees.')
         }        
     })
